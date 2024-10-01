@@ -34,13 +34,21 @@ There is an array of glasses in 3x3 filled with glasses. The user can now put co
 
 ### CPEE
 
-* Visit https://cpee.org/hub/?stage=development&dir=Teaching.dir/Prak.dir/TUM-Prak-24-SS.dir/
+* Visit the [Process Hub](https://cpee.org/hub/?stage=development&dir=Teaching.dir/Prak.dir/TUM-Prak-24-SS.dir/)
 * Open “Muddler_demo.xml”
 * The Graph on the bottom half should be like this:
   
 ![muddler_demo.png](resources/muddler_demo.png)
 * To execute the process, click on start
+  
 ![CPEE_Start_Demo.PNG](resources/CPEE_Start_Demo.PNG)
+
+#### Subprocesses
+
+This Demo uses subprocesses which also require data elements. To create subprocesses, a service call needs to be inserted which then should have the string "subprocess" in the endpoint. The subprocess now requires the link of the actual process that it starts and also passes the needed data elements.
+
+![CPEE_Subprocess_Demo.PNG](resources/CPEE_Subprocess_Demo.PNG)
+
 
 ### Execution
 
@@ -80,13 +88,28 @@ The holder is designed to make it easier for the robot to grad the muddler. It i
 ![muddler_stand_and_holder.png](resources/muddler_stand_and_holder.png)
 ![Muddler_with_stand-png](resources/Muddler_with_stand.jpg)
 
+
+
 ## Other possibilities
 
-It is also possible to create a cocktail-based decision, where each column/ glass array is one type of cocktail. In this example (“Muddler_demo_2.xml”), the data element “cocktail_name” needs to match with one of the three cocktails. It would then set the array and limit the amount of glasses poured into the cocktail glass. This process would run once per cocktail.
+It is also possible to create a cocktail-based decision, where each column/ glass array is one type of cocktail. In this example (“Muddler_demo_2.xml”, [Process Hub](https://cpee.org/hub/?stage=development&dir=Teaching.dir/Prak.dir/TUM-Prak-24-SS.dir/)), the data element “cocktail_name” needs to match with one of the three cocktails. It would then set the array and limit the amount of glasses poured into the cocktail glass. This process would run once per cocktail.
 
 ![muddler_demo_2.png](resources/muddler_demo_2.png)
 
+### Logic Example
 
+In order to make a decision, a condition can be used which then executes a script that sets the used array of glass. 
+
+![Other_possibilities_Condition.PNG](resources/Other_possibilities_Condition.PNG]
+
+The script changes the two data elements glass_array_pos and ingredient_limit. The first variable decides which column/ array of glasses is chosen and the second tells how many glasses (up to 3) are needed.
+
+    data.glass_array_pos = 0
+    data.ingredient_limit = 3
+
+After that, the subprocess needs to be executed with the data elements
+
+![CPEE_Subprocess_Dataelements](resources/CPEE_Subprocess_Dataelements.PNG)
 
 
 
