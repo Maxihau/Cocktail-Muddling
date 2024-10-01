@@ -40,7 +40,8 @@ There is an array of glasses in 3x3 filled with glasses. The user can now put co
 * The Graph on the bottom half should be like this:
   
 ![muddler_demo.png](resources/muddler_demo.png)
-* To execute the process, click on start
+
+* To execute the process, click on start in the execution tab on the top left:
   
 ![CPEE_Start_Demo.PNG](resources/CPEE_Start_Demo.PNG)
 
@@ -103,7 +104,7 @@ It is also possible to create a cocktail-based decision, where each column/ glas
 
 In order to make a decision, a condition can be used which then executes a script that sets the used array of glass. 
 
-![Other_possibilities_Condition.PNG](resources/Other_possibilities_Condition.PNG]
+![Other_possibilities_Condition.PNG](resources/Other_possibilities_Condition.PNG)
 
 The script changes the two data elements glass_array_pos and ingredient_limit. The first variable decides which column/ array of glasses is chosen and the second tells how many glasses (up to 3) are needed.
 
