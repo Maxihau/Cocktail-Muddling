@@ -1,19 +1,27 @@
 # Muddler
 
+# Table of Contents
+
+1. [Introduction](#introduction)
+2. [Preparations](#preparations)
+   - [CPEE](#cpee)
+   - [Universal Robot](#universal-robot)
+3. [Execution](#execution)
+4. [Processes](#processes)
+   - [Pouring content into a cocktail glass](#pouring-content-into-a-cocktail-glass-muddler_add_contentsxml)
+   - [Muddling content](#muddling-content-mudder_muddlingxml)
+5. [3D Prints](#3d-prints)
+6. [Other possibilities](#other-possibilities)
+
+
 ## Introduction
 
 This process aims to make specific cocktails like Mojitos, Caipirinhas,or Smashes as authentic as possible by including muddling into the cocktail-making process.
 
+### CPEE 
+The CPEE tool is a modular, service-oriented workflow execution engine (More information: [CPEE](https://cpee.org/)). It handles the cocktail processing logic and makes API calls to the [Universal Robot](https://www.universal-robots.com/de/) which then executes predefined processes.
 
-## Preparations
-
-### CPEE
-
-Visit https://cpee.org/hub/?stage=development&dir=Teaching.dir/Prak.dir/TUM-Prak-24-SS.dir/
-
-Open “Muddler_demo.xml”
-
-![muddler_demo.png](resources/muddler_demo.png)
+## Instructions
 
 ### Universal Robot
 
@@ -23,6 +31,16 @@ Physical preparation
 There is an array of glasses in 3x3 filled with glasses. The user can now put contents into the glasses. Each column can be filled up with up to 3 contents. In this case, we will add mint, lime, and sugar to each column (Starting with mint at the bottom). Therefore, it is possible to prepare three glasses of cocktails.
 
 ![glasses_array.png](resources/glasses_array.png)
+
+### CPEE
+
+* Visit https://cpee.org/hub/?stage=development&dir=Teaching.dir/Prak.dir/TUM-Prak-24-SS.dir/
+* Open “Muddler_demo.xml”
+* The Graph on the bottom half should be like this:
+  
+![muddler_demo.png](resources/muddler_demo.png)
+* To execute the process, click on start
+![CPEE_Start_Demo.PNG](resources/CPEE_Start_Demo.PNG)
 
 ### Execution
 
@@ -50,12 +68,17 @@ After adding the contents, the robot takes the muddler from the stand and moves 
 
 ![muddler_muddling.png](resources/muddler_muddling.png)
 
+## Muddler
+
+The muddler is bought via [Amazon](https://amzn.eu/d/gs9YuMl) and the size is 20,7 * 2,5 CM.
+
 ## 3D Prints
 
 The muddler stand and the holder are 3D printed. Both files can be found in the repository in the folder "3D Models". The muddler stand is used to store the muddler when it is not in use.
 The holder is designed to make it easier for the robot to grad the muddler. It is made of two parts which are held together by four M5 screws and nuts.
 
 ![muddler_stand_and_holder.png](resources/muddler_stand_and_holder.png)
+![Muddler_with_stand-png](resources/Muddler_with_stand.jpg)
 
 ## Other possibilities
 
