@@ -82,12 +82,14 @@ The muddler is bought via [Amazon](https://amzn.eu/d/gs9YuMl) and the size is 20
 
 ## 3D Prints
 
-The muddler stand and the holder are 3D printed. Both files can be found in the repository in the folder "3D Models". The muddler stand is used to store the muddler when it is not in use.
-The holder is designed to make it easier for the robot to grad the muddler. It is made of two parts which are held together by four M5 screws and nuts.
+The muddler stand and holder are 3D printed. Both files can be found in the repository under the "3D Models" folder.
+
+Muddler Stand: Stores the muddler when not in use.
+Holder: Assists the robot in grabbing the muddler, printed in two parts which are held together by four M5 screws and nuts.
 
 ![muddler_stand_and_holder.png](resources/muddler_stand_and_holder.png)
-![Muddler_with_stand-png](resources/Muddler_with_stand.jpg)
 
+![Muddler_with_stand-png](resources/Muddler_with_stand.jpg)
 
 
 ## Other possibilities
