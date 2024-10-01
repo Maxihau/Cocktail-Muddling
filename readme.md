@@ -26,7 +26,8 @@ The CPEE tool is a modular, service-oriented workflow execution engine (More inf
 ### Universal Robot
 
 The robot has to be set to “Automatic” and then to “Remote Control”.
-Physical preparation
+
+### Physical preparation
 
 There is an array of glasses in 3x3 filled with glasses. The user can now put contents into the glasses. Each column can be filled up with up to 3 contents. In this case, we will add mint, lime, and sugar to each column (Starting with mint at the bottom). Therefore, it is possible to prepare three glasses of cocktails.
 
