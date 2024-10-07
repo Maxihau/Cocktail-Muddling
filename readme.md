@@ -16,7 +16,7 @@
 
 ## Introduction
 
-This process aims to make specific cocktails like Mojitos, Caipirinhas,or Smashes as authentic as possible by including muddling into the cocktail-making process.
+This process aims to make specific cocktails like Mojitos, Caipirinhas, or Smashes as authentic as possible by including muddling into the cocktail-making process.
 
 ### CPEE 
 The CPEE tool is a modular, service-oriented workflow execution engine (More information: [CPEE](https://cpee.org/)). It handles the cocktail processing logic and makes API calls to the [Universal Robot](https://www.universal-robots.com/de/) which then executes predefined processes.
