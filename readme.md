@@ -3,15 +3,19 @@
 # Table of Contents
 
 1. [Introduction](#introduction)
-2. [Preparations](#preparations)
-   - [CPEE](#cpee)
-   - [Universal Robot](#universal-robot)
-3. [Execution](#execution)
-4. [Processes](#processes)
-   - [Pouring content into a cocktail glass](#pouring-content-into-a-cocktail-glass-muddler_add_contentsxml)
-   - [Muddling content](#muddling-content-mudder_muddlingxml)
-5. [3D Prints](#3d-prints)
-6. [Other possibilities](#other-possibilities)
+2. [CPEE](#cpee)
+3. [Instructions](#instructions)
+    - [Universal Robot](#universal-robot)
+    - [Physical Preparation](#physical-preparation)
+4. [Execution](#execution)
+5. [Processes](#processes)
+    - [Pouring content into a cocktail glass (“Muddler_add_contents.xml”)](#pouring-content-into-a-cocktail-glass-muddler_add_contentsxml)
+    - [Muddling content (“Mudder_muddling.xml”)](#muddling-content-mudder_muddlingxml)
+6. [Programs in Universal Robot](#programs-in-universal-robot)
+7. [Muddler](#muddler)
+8. [3D Prints](#3d-prints)
+9. [Other possibilities](#other-possibilities)
+    - [Logic Example](#logic-example)
 
 
 ## Introduction
@@ -27,7 +31,7 @@ The CPEE tool is a modular, service-oriented workflow execution engine (More inf
 
 The robot has to be set to “Automatic” and then to “Remote Control”.
 
-### Physical preparation
+### Physical Preparation
 
 There is an array of glasses in 3x3 filled with glasses. The user can now put contents into the glasses. Each column can be filled up with up to 3 contents. In this case, we will add mint, lime, and sugar to each column (Starting with mint at the bottom). Therefore, it is possible to prepare three glasses of cocktails.
 
@@ -58,7 +62,7 @@ To begin the process, start the instance in the CPEE for execution. The robot wi
 
 ## Processes
 
-The Process is divided into 2 sub-processes. It starts by adding the content into the cocktail glass and proceeds with the mudding sub-process. Both sub-processes work independently and can be used for other processes.
+The Process in CPEE is divided into 2 sub-processes. It starts by adding the content into the cocktail glass and proceeds with the mudding sub-process. Both sub-processes work independently and can also be used for other processes.
 
 ### Pouring content into a cocktail glass (“Muddler_add_contents.xml”)
 
@@ -78,6 +82,13 @@ After adding the contents, the robot takes the muddler from the stand and moves 
 
 ![muddler_muddling.png](resources/muddler_muddling.png)
 
+### Programs in Universal Robot
+
+Both subprocesses use service calls that executes programs in the Universal Robot. These programs can be found in the folder "Muddler". Only the programs with a "v1" at the end are relevant. Each program is a small task, like picking up the muddler.
+
+![muddler_folder](resources/Muddler_Folder_Universal_Robot.jpg)
+
+
 ## Muddler
 
 The muddler is bought via [Amazon](https://amzn.eu/d/gs9YuMl) and the size is 20,7 * 2,5 CM.
@@ -87,7 +98,13 @@ The muddler is bought via [Amazon](https://amzn.eu/d/gs9YuMl) and the size is 20
 The muddler stand and holder are 3D printed. Both files can be found in the repository under the "3D Models" folder.
 
 Muddler Stand: Stores the muddler when not in use.
+
+![muddler_stand](resources/Muddler_stand.PNG)
+
 Holder: Assists the robot in grabbing the muddler, printed in two parts which are held together by four M5 screws and nuts.
+
+![muddler_holder](resources/Muddler_Holder.PNG)
+
 
 ![muddler_stand_and_holder.png](resources/muddler_stand_and_holder.png)
 
